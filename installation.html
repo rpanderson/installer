@@ -1,0 +1,484 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installing the labscript suite &mdash; the labscript suite 2.2.1.dev53+g6d03345 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/labscript.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Recent changes to the labscript suite" href="changes.html" />
+    <link rel="prev" title="the labscript suite" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> the labscript suite
+          
+
+          
+            
+            <img src="_static/suite_logo_transparent.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.2.1.dev53+g6d03345
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installing the <em>labscript suite</em></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#virtual-environments">Virtual environments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#quick-start">Quick start</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#detailed-instructions">Detailed instructions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#regular-installation-from-the-python-package-index">Regular installation from the Python Package Index</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Quick start</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Detailed instructions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updating-a-regular-installation">Updating a regular installation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#developer-installation-for-those-who-want-to-customize-the-labscript-suite">Developer installation (for those who want to customize the <em>labscript suite</em>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Quick start</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Detailed instructions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updating-a-developer-installation">Updating a developer installation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Recent changes to the <em>labscript suite</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to the <em>labscript suite</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="archive.html">BitBucket archive</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://labscriptsuite.org">Home Page</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/labscript-suite/labscript-suite">Source Code</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">the labscript suite</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Installing the <em>labscript suite</em></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/installation.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="installing-the-labscript-suite">
+<h1>Installing the <em>labscript suite</em><a class="headerlink" href="#installing-the-labscript-suite" title="Permalink to this headline">¶</a></h1>
+<p>We’re excited to announce that accompanying the recent migration to GitHub, <em>labscript suite</em> components are now distributed as Python packages on <a class="reference external" href="https://pypi.org/user/labscript-suite">PyPI</a> and <a class="reference external" href="https://anaconda.org/labscript-suite">Anaconda Cloud</a>.</p>
+<p>This makes it far easier to get started using the <em>labscript suite</em>, as you no longer require a Mercurial or Git installation (or any knowledge of version control software); components can be installed and upgraded using:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://packaging.python.org/tutorials/installing-packages"><code class="docutils literal notranslate"><span class="pre">pip</span></code></a>: the standard package manager common to all Python distributions; or</p></li>
+<li><p><a class="reference external" href="https://anaconda.org/anaconda/conda"><code class="docutils literal notranslate"><span class="pre">conda</span></code></a>: a binary package and environment manager, part of the <a class="reference external" href="https://www.anaconda.com">Anaconda Python</a> distribution.</p></li>
+</ul>
+<div class="section" id="virtual-environments">
+<h2>Virtual environments<a class="headerlink" href="#virtual-environments" title="Permalink to this headline">¶</a></h2>
+<p>We recommend installing labscript (regular or developer mode) in a <a class="reference external" href="https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments">virtual environment</a>. This helps sandbox the codebase without interfering with (or being interfered with) your system Python installation, or Python environments used for other purposes. There are a number of ways to configure a virtual environment. If you are unfamiliar with doing so, we recommend using the <a class="reference external" href="https://docs.python.org/3/library/venv.html">venv module</a>, part of the Python Standard Library. Here’s an example (on Windows):</p>
+<div class="section" id="quick-start">
+<h3>Quick start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="o">&gt;</span> <span class="n">mkdir</span> <span class="n">labscript</span><span class="o">-</span><span class="n">suite</span>
+<span class="n">C</span><span class="p">:</span>\<span class="o">&gt;</span> <span class="n">cd</span> <span class="n">labscript</span><span class="o">-</span><span class="n">suite</span>
+<span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">venv</span> <span class="o">.</span><span class="n">venv</span>
+<span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="o">.</span><span class="n">venv</span>\<span class="n">Scripts</span>\<span class="n">activate</span>
+<span class="p">(</span><span class="o">.</span><span class="n">venv</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">pip</span> <span class="n">setuptools</span> <span class="n">wheel</span>
+</pre></div>
+</div>
+<p>Once activated, the name of the virtual environment (in this case, <code class="docutils literal notranslate"><span class="pre">.venv</span></code>) will prefix the command line.</p>
+</div>
+<div class="section" id="detailed-instructions">
+<h3>Detailed instructions<a class="headerlink" href="#detailed-instructions" title="Permalink to this headline">¶</a></h3>
+<ol>
+<li><p>From a new terminal, create the installation directory and enter it. Here we use <code class="docutils literal notranslate"><span class="pre">C:\labscript-suite</span></code> but this can be whatever you like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="o">&gt;</span> <span class="n">mkdir</span> <span class="n">labscript</span><span class="o">-</span><span class="n">suite</span>
+<span class="n">C</span><span class="p">:</span>\<span class="o">&gt;</span> <span class="n">cd</span> <span class="n">labscript</span><span class="o">-</span><span class="n">suite</span>
+</pre></div>
+</div>
+</li>
+<li><p>Create a virtual environment. Here we name it <code class="docutils literal notranslate"><span class="pre">.venv</span></code>, located inside the installation directory (name and location are also variable but these are conventional choices).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">venv</span> <span class="o">.</span><span class="n">venv</span>
+</pre></div>
+</div>
+</li>
+<li><p>Activate the virtual environment:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="o">.</span><span class="n">venv</span>\<span class="n">Scripts</span>\<span class="n">activate</span>
+</pre></div>
+</div>
+<p><em>Note:</em> This step is OS specific, e.g. on Linux it’s <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">.venv/bin/activate</span></code>.</p>
+</li>
+<li><p>Update the Python package installer and other installation packages of your virtual environment.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">.</span><span class="n">venv</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">pip</span> <span class="n">setuptools</span> <span class="n">wheel</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="regular-installation-from-the-python-package-index">
+<h2>Regular installation from the Python Package Index<a class="headerlink" href="#regular-installation-from-the-python-package-index" title="Permalink to this headline">¶</a></h2>
+<p>If you are using a virtual environment (<a class="reference external" href="#virtual-environments">above</a>), activate it before executing the following commands. In this example, we will use the installation directory <code class="docutils literal notranslate"><span class="pre">C:\labscript-suite</span></code> with an existing virtual environment, not yet activated (skip the first two lines/steps if continuing on from above).</p>
+<div class="section" id="id1">
+<h3>Quick start<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="o">.</span><span class="n">venv</span>\<span class="n">Scripts</span>\<span class="n">activate</span>
+<span class="p">(</span><span class="o">.</span><span class="n">venv</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">pip</span> <span class="n">setuptools</span> <span class="n">wheel</span>
+<span class="p">(</span><span class="o">.</span><span class="n">venv</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">labscript</span><span class="o">-</span><span class="n">suite</span>
+<span class="p">(</span><span class="o">.</span><span class="n">venv</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">PyQt5</span>
+<span class="p">(</span><span class="o">.</span><span class="n">venv</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="n">labscript</span><span class="o">-</span><span class="n">profile</span><span class="o">-</span><span class="n">create</span>
+<span class="p">(</span><span class="o">.</span><span class="n">venv</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="n">desktop</span><span class="o">-</span><span class="n">app</span> <span class="n">install</span> <span class="n">blacs</span> <span class="n">lyse</span> <span class="n">runmanager</span> <span class="n">runviewer</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h3>Detailed instructions<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ol>
+<li><p>Activate the virtual environment (this step is OS specific, e.g. on Linux it’s <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">.venv/bin/activate</span></code>).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="o">.</span><span class="n">venv</span>\<span class="n">Scripts</span>\<span class="n">activate</span>
+</pre></div>
+</div>
+</li>
+<li><p>Update the Python package installer and other installation packages of your virtual environment.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">.</span><span class="n">venv</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">pip</span> <span class="n">setuptools</span> <span class="n">wheel</span>
+</pre></div>
+</div>
+</li>
+<li><p>Install the meta-package from PyPI. This will install blacs, labscript, labscript-devices, labscript-utils, lyse, runmanager, runviewer, and all dependencies (except the bindings to the GUI toolkit and device-driver specific packages):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">.</span><span class="n">venv</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">labscript</span><span class="o">-</span><span class="n">suite</span>
+</pre></div>
+</div>
+</li>
+<li><p>Install PyQt5, the bindings to the GUI toolkit (not installed above for licensing reasons):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">.</span><span class="n">venv</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">PyQt5</span>
+</pre></div>
+</div>
+</li>
+<li><p>Create a profile directory in your home directory (the new location of user data; more <a class="reference external" href="#changes-to-profile-directories">below</a>):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">.</span><span class="n">venv</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="n">labscript</span><span class="o">-</span><span class="n">profile</span><span class="o">-</span><span class="n">create</span>
+</pre></div>
+</div>
+</li>
+<li><p>(Optional) Create shortcuts for the GUI applications (blacs, lyse, runmanager, and runviewer) and place them in the start-menu (or non-Windows OS equivalent).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">.</span><span class="n">venv</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="n">desktop</span><span class="o">-</span><span class="n">app</span> <span class="n">install</span> <span class="n">blacs</span> <span class="n">lyse</span> <span class="n">runmanager</span> <span class="n">runviewer</span>
+</pre></div>
+</div>
+<p>These will be named, e.g. ‘runmanager – the labcript suite’ which when clicked on will:</p>
+<ul class="simple">
+<li><p>Launch the application without a terminal window, using the virtual environment the above command was called in.</p></li>
+<li><p>Display the application with an application-specific shortcut in the taskbar (which can be pinned, like any other desktop application).</p></li>
+</ul>
+<p>Virtual environments named anything other than <code class="docutils literal notranslate"><span class="pre">.venv</span></code> will be included in the name of the shortcut, e.g. ‘runmanager – the labscript suite (py38)’ for a virtual environment named <code class="docutils literal notranslate"><span class="pre">py38</span></code>.</p>
+</li>
+</ol>
+<p>Alternatively, you can launch the applications from a terminal, e.g.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">.</span><span class="n">venv</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="o">&gt;</span> <span class="n">runmanager</span>
+</pre></div>
+</div>
+<p>This will print debugging information to the console.</p>
+<p>To launch the applications detached from the console, suffix the application name with <code class="docutils literal notranslate"><span class="pre">-gui</span></code>, e.g.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">.</span><span class="n">venv</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="o">&gt;</span> <span class="n">runmanager</span><span class="o">-</span><span class="n">gui</span>
+</pre></div>
+</div>
+<p><em>Note:</em> You must have activated the virtual environment in which the <em>labscript suite</em> was installed to use these commands.</p>
+</div>
+<div class="section" id="updating-a-regular-installation">
+<h3>Updating a regular installation<a class="headerlink" href="#updating-a-regular-installation" title="Permalink to this headline">¶</a></h3>
+<p>Individual components of the labscript suite can be updated using the <code class="docutils literal notranslate"><span class="pre">--upgrade</span></code> (<code class="docutils literal notranslate"><span class="pre">-U</span></code>) flag of <code class="docutils literal notranslate"><span class="pre">pip</span></code>. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">.</span><span class="n">venv</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span> <span class="n">runmanager</span>
+</pre></div>
+</div>
+<p>To upgrade to a pre-release version, you can use the <code class="docutils literal notranslate"><span class="pre">--pre</span></code> (pre-relase) flag:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">.</span><span class="n">venv</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span> <span class="o">--</span><span class="n">pre</span> <span class="n">runmanager</span>
+</pre></div>
+</div>
+<p>If updating multiple components, use a single pip install command for this to ensure dependency resolution is best dealt with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">.</span><span class="n">venv</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span> <span class="n">labscript</span> <span class="n">lyse</span> <span class="n">runmanager</span>
+</pre></div>
+</div>
+<p>You can also update (or downgrade) to a specific version:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">.</span><span class="n">venv</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">runmanager</span><span class="o">==</span><span class="mf">2.5</span><span class="o">.</span><span class="mi">0</span>
+</pre></div>
+</div>
+<p>Development versions will be suffixed with <code class="docutils literal notranslate"><span class="pre">devN</span></code>, i.e.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">.</span><span class="n">venv</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="n">labscript</span><span class="o">-</span><span class="n">suite</span><span class="o">&gt;</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">runmanager</span><span class="o">==</span><span class="mf">2.6</span><span class="o">.</span><span class="mi">0</span><span class="n">dev3</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="developer-installation-for-those-who-want-to-customize-the-labscript-suite">
+<h2>Developer installation (for those who want to customize the <em>labscript suite</em>)<a class="headerlink" href="#developer-installation-for-those-who-want-to-customize-the-labscript-suite" title="Permalink to this headline">¶</a></h2>
+<p><em>Note:</em> You do not necessarily need not fork, clone, and install editable versions of all _labscript suite _repositories to customise your installation and/or contribute these changes back to the base repositories. For example, if you only want to develop custom labscript device drivers, you might only fork and clone the labscript-devices repository. Moreover, there is now an option to write and use custom labscript device drivers outside of the labscript-devices installation directory.</p>
+<div class="section" id="id3">
+<h3>Quick start<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p><em>Coming soon!</em></p>
+</div>
+<div class="section" id="id4">
+<h3>Detailed instructions<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ol>
+<li><p>Fork the labscript-suite repositories you want to develop using the <a class="reference external" href="https://help.github.com/en/github/getting-started-with-github/fork-a-repo">GitHub online</a>. Below we will include all repositories (except the labscript-suite metapackage).</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">pip</span></code> to both clone these forks locally and install them into your environment. In this example (on Linux), the forks are owned by the (non-existent) GitHub user wkheisenberg.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install \
+--src . -e git+https://github.com/wkheisenberg/blacs#egg=blacs \
+--src . -e git+https://github.com/wkheisenberg/labscript#egg=labscript \
+--src . -e git+https://github.com/wkheisenberg/labscript-devices#egg=labscript-devices \
+--src . -e git+https://github.com/wkheisenberg/labscript-utils#egg=labscript-utils \
+--src . -e git+https://github.com/wkheisenberg/runmanager#egg=runmanager \
+--src . -e git+https://github.com/wkheisenberg/runviewer#egg=runviewer \
+--src . -e git+https://github.com/wkheisenberg/lyse#egg=lyse
+</pre></div>
+</div>
+<p><em>Notes:</em></p>
+<ul class="simple">
+<li><p>This will set your forked repository(ies) to be the ‘origin’ remote.</p></li>
+<li><p>On Windows the line continuation character is <code class="docutils literal notranslate"><span class="pre">^</span></code> rather than <code class="docutils literal notranslate"><span class="pre">\</span></code>.</p></li>
+</ul>
+<p>Alternatively, manually clone the repositories using <code><a class="reference external" href="https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository">git clone</a></code> and then install them using <code class="docutils literal notranslate"><span class="pre">pip</span></code> by running the following from the common parent directory:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install -e blacs -e labscript -e labscript-devices -e labscript-utils \
+    -e lyse -e runmanager -e runviewer
+</pre></div>
+</div>
+<p>For a single package, this would look like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/wkheisenberg/runmanager.git
+$ pip install -e runmanager
+</pre></div>
+</div>
+</li>
+<li><p>For each repository, set the upstream remote to the base labscript-suite repository:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd blacs
+$ git remote add upstream https://github.com/labscript-suite/blacs.git
+$ cd ..
+</pre></div>
+</div>
+<p>Repeat for the other repositories.</p>
+</li>
+<li><p>Continue from step 4 (install PyQt5) in the <a class="reference external" href="#regular-installation-from-the-python-package-index">regular installation instructions</a>.</p></li>
+</ol>
+</div>
+<div class="section" id="updating-a-developer-installation">
+<h3>Updating a developer installation<a class="headerlink" href="#updating-a-developer-installation" title="Permalink to this headline">¶</a></h3>
+<p>This assumes you have already completed the developer installation above and have:</p>
+<ul class="simple">
+<li><p>Forked a <em>labscript suite</em> repository on GitHub;</p></li>
+<li><p>Cloned the repository;</p></li>
+<li><p>Set your fork to be the ‘origin’ remote; and</p></li>
+<li><p>Set the labscript-suite base repository to be the ‘upstream’ remote.</p></li>
+</ul>
+<ol>
+<li><p>Use one of the following to keep your repository (and feature branches) up-to-date:</p>
+<p><a class="reference external" href="https://help.github.com/en/github/using-git/getting-changes-from-a-remote-repository#fetching-changes-from-a-remote-repository">Fetch changes, and merge</a> with your local master branch.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git checkout master
+$ git fetch upstream master --tags
+$ git merge upstream/master
+</pre></div>
+</div>
+<p>Or using <a class="reference external" href="https://help.github.com/en/github/using-git/getting-changes-from-a-remote-repository#pulling-changes-from-a-remote-repository">Git Pull</a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git checkout master
+$ git pull upstream master --tags
+</pre></div>
+</div>
+<p>Or using <a class="reference external" href="https://hub.github.com/">hub sync</a> command-line extension (does not require current local working branch to be master):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ hub sync
+</pre></div>
+</div>
+</li>
+<li><p>Update your feature branches by merging them with master or rebasing them to master:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git checkout your-feature-name
+$ git merge master &lt;OR&gt; git rebase master --autostash
+</pre></div>
+</div>
+</li>
+<li><p>Update your fork by <a class="reference external" href="https://help.github.com/en/github/using-git/pushing-commits-to-a-remote-repository">pushing</a> any changes resulting from steps 1–2 and/or subsequent local development:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git checkout master
+$ git push origin master --tags
+$ git checkout your-feature-name
+$ git push origin your-feature-name master
+</pre></div>
+</div>
+<p><em>Note:</em> If the feature branch has not yet been created on your fork, you need to include <code class="docutils literal notranslate"><span class="pre">-u</span></code> above, i.e.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git push -u origin your-feature-name
+</pre></div>
+</div>
+</li>
+<li><p>Checkout the commit you want to install. This might be a specific release version (which can be specified by tag):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git checkout v0.3.2
+</pre></div>
+</div>
+<p>… or using the commit SHA:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git checkout 59651b5
+</pre></div>
+</div>
+</li>
+<li><p>(Optional) Update the package using (from within the root of a repository):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install -e .
+</pre></div>
+</div>
+<p>As the installations are in editable mode and the version is being introspected at runtime, this step is not always necessary, but is required for any change requiring setup.py to be run to take effect, e.g. dependency changes, console entry points, etc.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="changes.html" class="btn btn-neutral float-right" title="Recent changes to the labscript suite" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="the labscript suite" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, labscript suite
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,285 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Recent changes to the labscript suite &mdash; the labscript suite 2.2.1.dev53+g6d03345 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/labscript.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Contributing to the labscript suite" href="contributing.html" />
+    <link rel="prev" title="Installing the labscript suite" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> the labscript suite
+          
+
+          
+            
+            <img src="_static/suite_logo_transparent.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.2.1.dev53+g6d03345
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installing the <em>labscript suite</em></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Recent changes to the <em>labscript suite</em></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#changes-to-profile-directories">Changes to profile directories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-to-application-shortcuts">Changes to application shortcuts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-to-source-code-structure">Changes to source code structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-to-versioning">Changes to versioning</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to the <em>labscript suite</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="archive.html">BitBucket archive</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://labscriptsuite.org">Home Page</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/labscript-suite/labscript-suite">Source Code</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">the labscript suite</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Recent changes to the <em>labscript suite</em></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/changes.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="recent-changes-to-the-labscript-suite">
+<h1>Recent changes to the <em>labscript suite</em><a class="headerlink" href="#recent-changes-to-the-labscript-suite" title="Permalink to this headline">¶</a></h1>
+<p>Upon migrating the code base to GitHub and publishing distributions on PyPI in April–May 2020, the following changes have been undertaken.</p>
+<div class="section" id="changes-to-profile-directories">
+<h2>Changes to profile directories<a class="headerlink" href="#changes-to-profile-directories" title="Permalink to this headline">¶</a></h2>
+<p>The <em>labscript suite</em> profile directory, containing application configurations, logs, and user-side code, is now located by default in the current user’s home directory, e.g.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">C:\Users\wkheisenberg\labscript-suite</span></code> on Windows.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">~/labscript-suite</span></code> or <code class="docutils literal notranslate"><span class="pre">/home/wkheisenberg/labscript-suite</span></code> on Linux and Mac OS X.</p></li>
+</ul>
+<p>A typical structure is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    ~/labscript-suite/
+    ├── app_saved_configs/
+    │   ├── default_experiment/
+    ├── labconfig/
+    ├── logs/
+    └── userlib/
+        ├── analysislib/
+        ├── labscriptlib/
+        ├── pythonlib/
+        └── user_devices/
+</pre></div>
+</div>
+<p>This structure is created by calling the command <code class="docutils literal notranslate"><span class="pre">labscript-profile-create</span></code>.</p>
+<p>in a terminal after installing <code class="docutils literal notranslate"><span class="pre">labscript-utils</span></code> (per the <a class="reference external" href="#regular-installation-from-the-python-package-index">installation instructions</a>).</p>
+<p><em>Note:</em> As of <a class="reference external" href="https://github.com/labscript-suite/labscript-utils/issues/37">labscript-suite/labscript-utils#37</a> this can be the same directory as an editable installation.</p>
+</div>
+<div class="section" id="changes-to-application-shortcuts">
+<h2>Changes to application shortcuts<a class="headerlink" href="#changes-to-application-shortcuts" title="Permalink to this headline">¶</a></h2>
+<p>Operating-system menu shortcuts, correct taskbar behaviour, and environment activation for the Python GUI applications (blacs, lyse, runmanager, and runviewer) is now handled by a standalone Python package <a class="reference external" href="https://github.com/chrisjbillington/desktop-app">desktop-app</a> (per installation instructions above). This currently supports Windows and Linux (Mac OS X support is forthcoming).</p>
+</div>
+<div class="section" id="changes-to-source-code-structure">
+<h2>Changes to source code structure<a class="headerlink" href="#changes-to-source-code-structure" title="Permalink to this headline">¶</a></h2>
+<p>Existing users who move to a developer (editable) installation, please note the following structural changes to the <em>labscript suite</em> source code:</p>
+<ul>
+<li><p>Each package has a top-level folder containing setup.py and setup.cfg used to build a distribution from source. The functional code base now resides in a subfolder corresponding to the name of the Python module, e.g. an editable installation might contain folders:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;path-to-your-labscript-installation&gt;/
+├── blacs/
+│   └── blacs/
+├── labscript/
+│   └── labscript/
+├── labscript-devices/
+│   └── labscript_devices/
+├── labscript-utils/
+│   └── labscript_utils/
+├── lyse/
+│   ├── lyse/
+├── runmanager/
+│   └── runmanager/
+└── runviewer/
+    └── runviewer/
+</pre></div>
+</div>
+</li>
+<li><p>Package names (shared by repositories and top-level folders) are now hyphenated, e.g. labscript-devices and labscript-utils.</p></li>
+<li><p>Module names remain underscored, i.e. labscript_devices and labscript_utils.</p></li>
+<li><p>The mixing of hyphen and underscores is inelegant but conventional.</p></li>
+<li><p>All references to blacs are now lowercase.</p></li>
+<li><p>As installation no longer requires a separate package, the repository formerly named ‘installer’ has been renamed to ‘<a class="reference external" href="https://github.com/labscript-suite/labscript-suite/issues">labscript-suite</a>’, and will be used as a metapackage for the labscript suite.</p></li>
+</ul>
+</div>
+<div class="section" id="changes-to-versioning">
+<h2>Changes to versioning<a class="headerlink" href="#changes-to-versioning" title="Permalink to this headline">¶</a></h2>
+<p>Aside from the maintenance branches described <a class="reference external" href="#branching-modelstrategy">below</a>, versions of the labscript suite packages are introspected at run-time using either the <a class="reference external" href="importlib.metadata">importlib.metadata</a> library (regular installations) or <a class="reference external" href="https://github.com/pypa/setuptools_scm">setuptools_scm</a> (developer installations). Thus any changes to an editable install will be traceable by local version numbers, e.g. editing the released version of a package with version  2.4.0 will result in 2.4.0dev1+gc28fe94, for example. This will help us diagnose issues users have with their editable installations.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="contributing.html" class="btn btn-neutral float-right" title="Contributing to the labscript suite" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installing the labscript suite" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, labscript suite
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

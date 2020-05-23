@@ -1,0 +1,276 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Contributing to the labscript suite &mdash; the labscript suite 2.2.1.dev53+g6d03345 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/labscript.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="BitBucket archive" href="archive.html" />
+    <link rel="prev" title="Recent changes to the labscript suite" href="changes.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> the labscript suite
+          
+
+          
+            
+            <img src="_static/suite_logo_transparent.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.2.1.dev53+g6d03345
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installing the <em>labscript suite</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Recent changes to the <em>labscript suite</em></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing to the <em>labscript suite</em></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#issue-tracking">Issue tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#request-for-developers">Request for developers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pull-requests">Pull requests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#branching-model-strategy">Branching model/strategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#learning-git">Learning Git</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="archive.html">BitBucket archive</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://labscriptsuite.org">Home Page</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/labscript-suite/labscript-suite">Source Code</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">the labscript suite</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Contributing to the <em>labscript suite</em></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/contributing.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="contributing-to-the-labscript-suite">
+<h1>Contributing to the <em>labscript suite</em><a class="headerlink" href="#contributing-to-the-labscript-suite" title="Permalink to this headline">¶</a></h1>
+<p>We are very grateful for all the contributions users have made in the past decade to make the <em>labscript suite</em> the most widely used open-source experiment control and automation system in quantum science. These include development, suggestions, and feedback, and we look forward to this continuing on GitHub.</p>
+<div class="section" id="issue-tracking">
+<h2>Issue tracking<a class="headerlink" href="#issue-tracking" title="Permalink to this headline">¶</a></h2>
+<p>The issue tracking on GitHub is very similar to BitBucket, with the added advantage that you can add inter-repository issue references, e.g. referring to <a class="reference external" href="https://github.com/labscript-suite/runmanager/issues/68">labscript-suite/runmanager#68</a> in any issue or pull request will link to the corresponding issue. We have imported all issues from the BitBucket repositories into the GitHub repositories. This import is not perfect (as each comment is now posted by Phil Starkey) but the comments have been modified to contain the original author attribution. We have also updated all links to files, pull requests, issues, and commits so that they point to the equivalent GitHub location and/or the archived copy of the data (as discussed above).</p>
+<p>Please use the GitHub issue tracker (rather than the mailing list) for:</p>
+<ul class="simple">
+<li><p>Reporting <strong>bugs</strong> (when something doesn’t work or works ina way you didn’t expect);</p></li>
+<li><p>Suggesting <strong>enhancements</strong>: new features or requests;</p></li>
+<li><p>Issues relating to <strong>installation</strong>, <strong>performance</strong>, or <strong>documentation</strong>.</p></li>
+</ul>
+<p>However, advice for how to do something with the existing functionality of the <em>labscript suite</em> is better suited to the mailing list.</p>
+</div>
+<div class="section" id="request-for-developers">
+<h2>Request for developers<a class="headerlink" href="#request-for-developers" title="Permalink to this headline">¶</a></h2>
+<p>We would like to reaffirm our invitation for users to directly contribute toward developing the <em>labscript suite</em>. We have established a separate discussion forum on Zulip for discussing development direction and design. If you are interested in being a part of these discussions, and/or testing and merging pull requests, please <a class="reference external" href="mailto:labscriptsuite&#37;&#52;&#48;gmail&#46;com">reach out to us</a>.</p>
+</div>
+<div class="section" id="pull-requests">
+<h2>Pull requests<a class="headerlink" href="#pull-requests" title="Permalink to this headline">¶</a></h2>
+<p>We will continue the same feature-branch workflow as before:</p>
+<ol class="simple">
+<li><p><a class="reference external" href="https://guides.github.com/activities/forking/">Fork</a> one or more of the labscript suite repositories;</p></li>
+<li><p>Create a branch on your fork for a new feature;</p></li>
+<li><p>Make and commit changes to this branch; and</p></li>
+<li><p>Make a pull request back to our repository.</p></li>
+</ol>
+<p>These steps are broadly covered in the GitHub <a class="reference external" href="https://guides.github.com/activities/hello-world/">Hello World</a> guide, and in detail on the <a class="reference external" href="https://numpy.org/doc/stable/dev/development_workflow.html">NumPy development workflow</a>.</p>
+</div>
+<div class="section" id="branching-model-strategy">
+<h2>Branching model/strategy<a class="headerlink" href="#branching-model-strategy" title="Permalink to this headline">¶</a></h2>
+<p>The move to GitHub for source control and PyPI for distribution is accompanied by a slight change in the branching strategy, to improve deployment and stability of the <em>labscript suite</em>. Whereas before all versions corresponded to single commits on the master branch; dedicated branches will be used to release and service minor versions. For example, releasing v0.1.0 would see the creation of a branch named maintenance/0.1.x, used to service all 0.1 versions. As we adhere to <a class="reference external" href="https://semver.org/">semantic versioning</a>, bug-fixes would be applied in this branch, bumping the minor (final) version number each time, e.g. 0.1.1, 0.1.2, etc. No development will occur in these branches; new features are merged into master, and bug-fixes are cherry-picked from master.</p>
+<p>You can learn more about this branching model at:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://releaseflow.org/">releaseflow.org</a></p></li>
+<li><p><a class="reference external" href="https://numpy.org/doc/stable/dev/development_workflow.html">NumPy development workflow</a></p></li>
+<li><p><a class="reference external" href="https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/release-flow">Release Flow – Azure DevOps</a></p></li>
+</ul>
+</div>
+<div class="section" id="learning-git">
+<h2>Learning Git<a class="headerlink" href="#learning-git" title="Permalink to this headline">¶</a></h2>
+<p>As our former development, installation, and upgrading practices involved Mercurial revision-control, some of you may not be familiar with Git. While you no longer need to use <em>any</em> revision control system to use the <em>labscript suite</em>, those of you wanting to contribute to development who aren’t acquainted with Git may benefit from these resources:</p>
+<ul class="simple">
+<li><p>NumPy: <a class="reference external" href="https://numpy.org/doc/stable/dev/gitwash/development_setup.html">Getting started with Git development</a></p></li>
+<li><p><a class="reference external" href="https://guides.github.com/">GitHub Guides</a>: Very cogent information for beginners. We recommend starting with:</p>
+<ul>
+<li><p><a class="reference external" href="https://guides.github.com/activities/hello-world/">Hello World</a> (covers the basic process</p></li>
+<li><p><a class="reference external" href="https://guides.github.com/introduction/git-handbook/">Git Handbook</a>
+<em>Note:</em> You may notice references to ‘GitHub Flow’ in these guides (and ‘Git Flow’ elsewhere). These share some aspects of the Release Flow branching-workflow we use, but are distinct.</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://www.atlassian.com/git/tutorials">Atliassian Git Tutorials</a>: Despite the many references to BitBucket (ignore these); there is a wealth of excellent beginner information for using Git at the command line here; and finally</p></li>
+<li><p><a class="reference external" href="https://ohshitgit.com/">Oh Shit, Git!?!</a> Mistakes happen. This is a good place to start fixing them. (<a class="reference external" href="https://dangitgit.com/">Censored version</a>.)</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="archive.html" class="btn btn-neutral float-right" title="BitBucket archive" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="changes.html" class="btn btn-neutral float-left" title="Recent changes to the labscript suite" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, labscript suite
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
